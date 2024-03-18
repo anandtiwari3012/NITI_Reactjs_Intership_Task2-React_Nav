@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* Navbar.css */
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+ /* align-items: center;*/
+  background-color: #333;
+  color: #d18282;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand {
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: right;
+  list-style-type: none;
+  padding: 0;
+  padding-left:90px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links li {
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rch;
+}
+
+.menu-toggle {
+  display: none; /* Hide initially */
+  cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+      grid-template-columns: auto 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+      display: none; /* Hide nav links on mobile */
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #444; /* Background color for dropdown */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
   }
+
+  .menu-toggle {
+      display: block; /* Show menu toggle button */
+  }
+}
+.body{
+  text-align: center ;
+  margin-top: 50px;
 }
