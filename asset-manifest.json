@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NITI_Reactjs_Internship_Task2-React_Nav/static/css/main.b980b765.css",
+    "main.js": "/NITI_Reactjs_Internship_Task2-React_Nav/static/js/main.609646a6.js",
+    "index.html": "/NITI_Reactjs_Internship_Task2-React_Nav/index.html",
+    "main.b980b765.css.map": "/NITI_Reactjs_Internship_Task2-React_Nav/static/css/main.b980b765.css.map",
+    "main.609646a6.js.map": "/NITI_Reactjs_Internship_Task2-React_Nav/static/js/main.609646a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b980b765.css",
+    "static/js/main.609646a6.js"
+  ]
+}
